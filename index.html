@@ -15,11 +15,17 @@
         rel="stylesheet">
     <style>
         h4 {
-            font-size: 1.3vw;
+            font-size: 1.7vw;
         }
 
         p.card-text {
-            font-size: .9vw;
+            font-size: 1.2vw;
+        }
+
+        p.pretitle {
+            font-size: .6vw;
+            text-transform: uppercase; 
+            font-weight: bold;
         }
 
         p.jum-text {
@@ -45,11 +51,14 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
-        style="font-family: Arial, Helvetica, sans-serif; font-size: .7vw;">
+        style="font-family: Arial, Helvetica, sans-serif; font-size: .9vw;">
 
         <a class="navbar-brand" href=""></a>
         <img src="https://cdn3.iconfinder.com/data/icons/camping-ultra-color/60/044_-_Location-512.png" width="40"
             alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <!-- Links -->
         <div class="collapse navbar-collapse" id="collapsibleNavId">
 
@@ -79,21 +88,24 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#go">Videos</a>
                 </li>
-                <li class="nav-item">
-                    <!-- social media -->
-                    <a class="fa fa-twitter pt-2 pl-2 btn" style="font-size: 20px; color: rgba(255,255,255,.5);"
-                        aria-hidden="true" href="https://twitter.com/"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="fa fa-facebook pt-2 pl-3" style="font-size: 20px; color: rgba(255,255,255,.5);"
-                        aria-hidden="true" href="https://facebook.com/"></a>
-                </li>
-                <li> <a class="fa fa-instagram pt-2 pl-3" style="font-size: 20px; color: rgba(255,255,255,.5);"
-                        aria-hidden="true" href="https://instagram.com/"></a>
-                </li>
-                <li> <a class="fa fa-youtube-play pt-2 pl-3" style="font-size: 20px; color: rgba(255,255,255,.5);"
-                        aria-hidden="true" href="https://youtube.com/"></a>></a>
             </ul>
+            <!-- social media -->
+
+            <div class="d-inline-flex float-left p-2">
+                <a class="fa fa-twitter mr-3" style="font-size: 20px; color: rgba(255,255,255,.5);" aria-hidden="true"
+                    href="https://twitter.com/"></a>
+
+                <a class="fa fa-facebook mr-3" style="font-size: 20px; color: rgba(255,255,255,.5);" aria-hidden="true"
+                    href="https://facebook.com/"></a>
+
+                <a class="fa fa-instagram mr-3" style="font-size: 20px; color: rgba(255,255,255,.5);" aria-hidden="true"
+                    href="https://instagram.com/"></a>
+
+                <a class="fa fa-youtube-play mr-3" style="font-size: 20px; color: rgba(255,255,255,.5);"
+                    aria-hidden="true" href="https://youtube.com/"></a>
+            </div>
+
+
             <form class="form-inline my-2 my-lg-0">
                 <!-- search form -->
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -104,13 +116,13 @@
 
 
     <div class="jumbotron text-center bg-white"
-        style="background-image: url(https://pngimage.net/wp-content/uploads/2018/06/travel-background-png-2.png); background-position: left bottom;">
+        style="background-image: url(https://pngimage.net/wp-content/uploads/2018/06/travel-background-png-2.png); background-position: right bottom;">
         <h1 class="text-info mt-5" style="font-family: 'Homemade Apple', cursive; letter-spacing: 3px; font-size: 4vw;">
             The Travel Hack
         </h1>
-        <h2 class="mb-4"
-            style="text-transform: uppercase; font-size: 0.83vw; font-weight: bolder; letter-spacing: 3px; text-shadow: 3px 2px 4px #888686;">
-            The Stylish adventure blog</h2>
+        <h4 class="mb-4"
+            style="text-transform: uppercase; font-weight: bolder; letter-spacing: 3px; text-shadow: 3px 2px 4px #888686;">
+            The Stylish adventure blog</h4>
     </div>
 
 
@@ -119,55 +131,58 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="card border-top-0 border-right-0 border-left-0">
                     <img class="card-img-top"
                         src="https://thetravelhack.com/wp-content/uploads/2017/11/5X6A4665-370x280.jpg"
                         alt="me-in-the-citchen">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">BLOG</p>
-                        <h4 class="card-title" style="font-size: 1.3vw;">About The Travel Hack</h4><br>
+                        <p class="pretitle">BLOG</p>
+                        <h4 class="card-title">About The Travel Hack</h4><br>
                         <p class="card-text">February 18, 2019</p>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn  btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="card border-top-0 border-right-0 border-left-0">
                     <img class="card-img-top"
                         src="https://thetravelhack.com/wp-content/uploads/2018/12/Why-Im-happy-370x280.jpg"
                         alt="me-nature">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">BLOG</p>
-                        <h4 class="card-title">The Travel Hack: How it all began</h4>
+                        <p class="pretitle">BLOG</p>
+                        <h4 class="card-title">The Travel Hack: How it all began</h4><br>
                         <p class="card-text">January 8, 2019</p>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="card border-top-0 border-right-0 border-left-0">
                     <img class="card-img-top"
                         src="https://thetravelhack.com/wp-content/uploads/2018/11/The-Travel-Hack-Pro-Cabin-Case-Monica-Stott-600x451.jpg"
                         alt="at-the-airport">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">BLOG</p>
+                        <p class="pretitle">BLOG</p>
                         <h4 class="card-title">I've designed a Travel Hack Cabin Case</h4>
                         <p class="card-text">September 24, 2018</p>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
-        </div><!-- row -->
+        </div> <!-- end row -->
 
 
 
         <div class="jumbotron border text-center mt-5">
             <h1 style="font-size: 3.5vw;">Welcome to The Travel Hack!</h1> <br>
-            <p style="font-size: 1.15vw;">Hello and welcome to The Travel Hack, a travel blog about weekend breaks and
+            <p style="font-size: 1.15vw;">Hello and welcome to The Travel Hack, a travel blog about weekend breaks
+                and
                 my travel hacks and tips to help you travel more, see more and experience more! <br> <br>
-                My name is Anna and I’ve been running this blog for 10 years. I started as a budget backpacker and this
-                blog has evolved with me over the years as I’ve grown and had children. The Travel Hack is now one of
+                My name is Anna and I’ve been running this blog for 10 years. I started as a budget backpacker and
+                this
+                blog has evolved with me over the years as I’ve grown and had children. The Travel Hack is now one
+                of
                 the leading travel blogs with over 150,000 monthly readers! <br><br>
 
                 Please subscrube at my news for my latest updates!
@@ -186,56 +201,56 @@
 
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-sm-3">
                 <div class="card border-top-0 border-right-0 border-left-0">
-                    <img class="card-img-top"
+                    <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2020/02/A-Foodie-Guide-to-the-Lake-District-_-The-Travel-Hack-270x210.png"
                         alt="collage">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">UK</p>
+                        <p class="pretitle">UK</p>
                         <h4 class="card-title">A Foodie Guide to the Lake District</h4><br>
                         <p class="card-text">December 10, 2019</p>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-sm-3">
                 <div class="card border-top-0 border-right-0 border-left-0">
-                    <img class="card-img-top"
+                    <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2017/07/Maraine-Lake-Banff-270x210.jpg"
                         alt="mountain">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">travel tips</p>
+                        <p class="pretitle">travel tips</p>
                         <h4 class="card-title">Do you need an eTA for Canada?</h4><br>
                         <p class="card-text">January 8, 2020</p>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn  btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-sm-3">
                 <div class="card border-top-0 border-right-0 border-left-0">
-                    <img class="card-img-top"
+                    <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2020/02/D04C0A33-17C9-4F01-982B-13C92717F58D-270x210.jpg"
                         alt="aroma">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">mum hucks</p>
+                        <p class="pretitle">mum hucks</p>
                         <h4 class="card-title">I've designed a Travel Hack Cabin Case</h4>
                         <p class="card-text">September 24, 2018</p> <br>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-sm-3">
                 <div class="card border-top-0 border-right-0 border-left-0">
-                    <img class="card-img-top"
+                    <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2018/08/Abersoch-coffee-from-two-islands-270x210.jpg"
                         alt="coffee">
                     <div class="card-body">
-                        <p style="text-transform: uppercase; font-size: 0.52vw; font-weight: bold;">BLOG</p>
+                        <p class="pretitle">BLOG</p>
                         <h4 class="card-title">I've designed a Travel Hack Cabin Case</h4>
                         <p class="card-text">September 24, 2018</p> <br>
-                        <a href="#" class="btn btn-block btn-outline-info">Read</a>
+                        <a href="#" class="btn  btn-outline-info">Read</a>
                     </div>
                 </div>
             </div>
@@ -314,7 +329,8 @@
 
                         <br> <br>
 
-                        We believe luxurious travel can be affordable and isn't just for the rich. Follow along with our
+                        We believe luxurious travel can be affordable and isn't just for the rich. Follow along with
+                        our
                         worldwide adventures as we share our trips and tips for incredible travel experiences on a
                         modest
                         budget.
