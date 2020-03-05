@@ -13,17 +13,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700|Homemade+Apple&display=swap"
         rel="stylesheet">
+    <link href="https://fontawesome.com/icons/search?style=solid">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: 'EB Garamond', serif;
-            font-size: 1vw;
+    
         }
 
+        #search {
+            width: 70%;
+        }
 
         h1 {
             font-family: 'Homemade Apple', cursive;
             letter-spacing: 3px;
-            font-size: 3rem;
+            
         }
 
 
@@ -36,15 +41,20 @@
             font-weight: bolder;
             letter-spacing: 3px;
             text-shadow: 3px 2px 4px #888686;
+            font-size: .7rem;
+        }
+
+        .navbar {
             font-size: .8rem;
         }
 
         .dropdown-item {
-            font-size: .6rem;
+            font-size: .8rem;
             border-bottom: 1px solid #b2b4b5;
         }
 
         .jt {
+           height: 100%;
             background-image: url(https://pngimage.net/wp-content/uploads/2018/06/travel-background-png-2.png);
             background-repeat: no-repeat;
             background-position: right bottom;
@@ -62,9 +72,7 @@
             font-weight: bold;
         }
 
-        p {
-            font-size: 1.2rem;
-        }
+        
     </style>
 </head>
 
@@ -85,61 +93,60 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href=""></a>
+            <img src="https://cdn3.iconfinder.com/data/icons/camping-ultra-color/60/044_-_Location-512.png" width="40"
+                alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
 
-        <a class="navbar-brand" href=""></a>
-        <img src="https://cdn3.iconfinder.com/data/icons/camping-ultra-color/60/044_-_Location-512.png" width="40"
-            alt="">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 ml-3 mt-lg-0" style="text-transform: uppercase;">
 
-            <ul class="navbar-nav mr-auto mt-2 ml-3 mt-lg-0" style="text-transform: uppercase;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Destionations</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Europe</a>
+                            <a class="dropdown-item" href="#">Asia</a>
+                            <a class="dropdown-item" href="#">Africa</a>
+                            <a class="dropdown-item" href="#">Global journey</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Travel tips</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Destionations</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="font-size: smaller;">
-                        <a class="dropdown-item" href="#">Europe</a>
-                        <a class="dropdown-item" href="#">Asia</a>
-                        <a class="dropdown-item" href="#">Africa</a>
-                        <a class="dropdown-item" href="#">Global journey</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Travel tips</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#go">Videos</a>
+                    </li>
+                </ul>
+                <!-- social media -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#go">Videos</a>
-                </li>
-            </ul>
-            <!-- social media -->
+                <div class="d-inline-flex float-left p-2">
+                    <a class="fa fa-twitter mr-3" aria-hidden="true" href="https://twitter.com/"></a>
+                    <a class="fa fa-facebook mr-3" aria-hidden="true" href="https://facebook.com/"></a>
+                    <a class="fa fa-instagram mr-3" aria-hidden="true" href="https://instagram.com/"></a>
+                    <a class="fa fa-youtube-play mr-3" aria-hidden="true" href="https://youtube.com/"></a>
+                </div>
 
-            <div class="d-inline-flex float-left p-2">
-                <a class="fa fa-twitter mr-3" aria-hidden="true" href="https://twitter.com/"></a>
 
-                <a class="fa fa-facebook mr-3" aria-hidden="true" href="https://facebook.com/"></a>
-
-                <a class="fa fa-instagram mr-3" aria-hidden="true" href="https://instagram.com/"></a>
-
-                <a class="fa fa-youtube-play mr-3" aria-hidden="true" href="https://youtube.com/"></a>
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- search form -->
+                    <input id="search" class="form-control mr-md-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i
+                            class="fa fa-search"></i></button>
+                </form>
             </div>
-
-
-            <form class="form-inline my-2 my-lg-0">
-                <!-- search form -->
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
     </nav>
     <!-- End Navigation -->
 
@@ -161,7 +168,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 ">
                 <div class="card border-0">
                     <img class="card-img-top"
                         src="https://thetravelhack.com/wp-content/uploads/2017/11/5X6A4665-370x280.jpg"
@@ -206,7 +213,7 @@
 
         <div class="jumbotron border text-center mt-5">
             <h1 style="font-size: 1.5rem">Welcome to The Travel Hack!</h1> <br>
-            <p style="font-size: .8rem;">Hello and welcome to The Travel Hack, a travel blog about weekend breaks
+            <p>Hello and welcome to The Travel Hack, a travel blog about weekend breaks
                 and
                 my travel hacks and tips to help you travel more, see more and experience more! <br> <br>
                 My name is Anna and I’ve been running this blog for 10 years. I started as a budget backpacker and
@@ -231,7 +238,7 @@
 
 
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-lg-3">
                 <div class="card border-0">
                     <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2020/02/A-Foodie-Guide-to-the-Lake-District-_-The-Travel-Hack-270x210.png"
@@ -244,7 +251,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-lg-3">
                 <div class="card border-0">
                     <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2017/07/Maraine-Lake-Banff-270x210.jpg"
@@ -257,7 +264,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-lg-3">
                 <div class="card border-0">
                     <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2020/02/D04C0A33-17C9-4F01-982B-13C92717F58D-270x210.jpg"
@@ -271,7 +278,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-lg-3">
                 <div class="card border-0">
                     <img class="card-img-top img-fluid"
                         src="https://thetravelhack.com/wp-content/uploads/2018/08/Abersoch-coffee-from-two-islands-270x210.jpg"
